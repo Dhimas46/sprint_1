@@ -1,0 +1,66 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Sprint 1",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://127.0.0.1:8000/search"
+      }
+    ],
+    "paths": {
+      "/provinces": {
+        "get": {
+          "tags": [
+            "General"
+          ],
+          "summary": "GET Provinsi",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "query",
+              "schema": {
+                "type": "integer"
+              },
+              "example": "2"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {}
+              }
+            }
+          }
+        }
+      },
+      "/cities": {
+        "get": {
+          "tags": [
+            "General"
+          ],
+          "summary": "GET City",
+          "parameters": [
+            {
+              "name": "city_id",
+              "in": "query",
+              "schema": {
+                "type": "integer"
+              },
+              "example": "2"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
