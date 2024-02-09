@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "a6cbd05e-3bde-4d5e-b5fb-505835ba4f10",
+		"name": "Sprint 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29448024"
+	},
+	"item": [
+		{
+			"name": "GET Provinsi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}search/provinces?id=2",
+					"host": [
+						"{{base_url}}search"
+					],
+					"path": [
+						"provinces"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET City",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}search/cities?city_id=2",
+					"host": [
+						"{{base_url}}search"
+					],
+					"path": [
+						"cities"
+					],
+					"query": [
+						{
+							"key": "city_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
