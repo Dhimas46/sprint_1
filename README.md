@@ -23,11 +23,19 @@
 <tbody>
 <tr>
 <td>GET</td>
-<td>[<a href="http://127.0.0.1:8000/search/provinces?id=%7Bprovince_id%7D">http://127.0.0.1:8000/search/provinces?id={province_id}</a>][PlDb]</td>
+<td>[<a href="http://127.0.0.1:8000/search/provinces?id=%7Bprovince_id%7D">http://127.0.0.1:8000/search/provinces?id={province_id}</a>][GET Province By id]</td>
 </tr>
 <tr>
 <td>GET</td>
-<td>[<a href="http://127.0.0.1:8000/search/cities?id=%7Bcity_id%7D">http://127.0.0.1:8000/search/cities?id={city_id}</a>][PlGh]</td>
+<td>[<a href="http://127.0.0.1:8000/search/provinces">http://127.0.0.1:8000/search/provinces</a>][GET Province]</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>[<a href="http://127.0.0.1:8000/search/cities?id=%7Bcity_id%7D">http://127.0.0.1:8000/search/cities?id={city_id}</a>][GET Cities By id]</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>[<a href="http://127.0.0.1:8000/search/cities?province_id=%7Bprovince_id%7D">http://127.0.0.1:8000/search/cities?province_id={province_id}</a>][GET Cities By Province id]</td>
 </tr>
 </tbody>
 </table>
